@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: guestbook-ui-ingress
+spec:
+  rules:
+  - host: guestbook.traefik.me  # Replace with your desired domain
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: kustomize-guestbook-ui  # Name of the Guestbook UI Service
+            port:
+              number: 80    # Port of the Guestbook UI Service
