@@ -8,10 +8,3 @@ config:
 
 applications:
   - name: guestbook-azdo
-  - name: helm-hooks
-  - name: jsonnet-guestbook
-  - name: jsonnet-guestbook-tla
-  - name: kustomize-guestbook
-  - name: pre-post-sync
-  - name: sock-shop
-  - name: sync-waves
