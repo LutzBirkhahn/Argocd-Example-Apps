@@ -7,7 +7,7 @@ config:
       targetRevision: master
 
 applications:
-  - name: guestbook
+  - name: guestbook-azdo
   - name: helm-hooks
   - name: jsonnet-guestbook
   - name: jsonnet-guestbook-tla
