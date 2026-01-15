@@ -5,9 +5,6 @@ parameters:
   - name: environment
     type: string
     values:
-      - dev
-      - acc
-      - prod
       - tools
 
 name: "Deploy to ${{ parameters.environment }}"
@@ -24,7 +21,6 @@ stages:
   - template: service/deploy/deploy-helm.yml@templates
     parameters:
       name: DeployHelm
-      releaseName: argocd-example-azdo
-      kubernetesNamespace: argocd-example-azdo
+      releaseName: apps
       environment: ${{ parameters.environment }}
       imageTag: v3
