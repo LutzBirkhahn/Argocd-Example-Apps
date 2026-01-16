@@ -8,6 +8,7 @@ spec:
   selector:
     matchLabels:
       app: guestbook-azdo
+      team: sre
   template:
     metadata:
       labels:
